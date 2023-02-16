@@ -15,7 +15,7 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
         CountSecond countSecond = new CountSecond();
 
-        Runnable print5 = () -> System.out.println("5 second");
+        Runnable print5 = () -> System.out.println("Прошло 5 секунд");
         IntConsumer printNumber = number -> System.out.println(number);
 
         Thread threadFive = new Thread(() -> {
